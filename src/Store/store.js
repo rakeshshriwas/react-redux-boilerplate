@@ -1,6 +1,7 @@
 // Package
 import { createStore, combineReducers, applyMiddleware } from "redux";
-import { logger } from "redux-logger";
+import logger from "redux-logger";
+import thunk from "redux-thunk";
 
 // Reducer
 import ToDoReducer from "../Reducers/ToDoReducer";
@@ -12,7 +13,8 @@ const store = combineReducers({
   userInfo: UserReducer
 });
 
-const createStoreWithMiddleWare = applyMiddleware(logger)(createStore);
+import thunk from "redux-thunk";
+const createStoreWithMiddleWare = applyMiddleware(thunk, logger)(createStore);
 
 export default createStoreWithMiddleWare(
   store,

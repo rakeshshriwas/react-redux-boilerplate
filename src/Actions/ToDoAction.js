@@ -1,4 +1,4 @@
-// Add Todo Task
+// Add Todo Task Dispatch Action To Reducer
 const addTodoTask = ({ text }) => {
   return {
     type: "ADD_TODO",
@@ -20,7 +20,7 @@ const addTodoTask = ({ text }) => {
 //   });
 // };
 
-// Delete Todo Task
+// Delete Todo Task Dispatch Action To Reducer
 const deleteTodoTask = index => {
   return {
     type: "DELETE_TODO",
@@ -28,7 +28,7 @@ const deleteTodoTask = index => {
   };
 };
 
-// Update Todo Task
+// Update Todo Task Dispatch Action To Reducer
 const updateTodoTask = ({ text, index }) => {
   return {
     type: "EDIT_TODO",

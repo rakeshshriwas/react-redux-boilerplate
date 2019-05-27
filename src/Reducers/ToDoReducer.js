@@ -4,7 +4,7 @@ import {
   EDIT_TODO
 } from "../ActionsTypes/ToDoActionType";
 
-// Reducer
+// Reducer ()
 const todoReducer = (state = [], action) => {
   switch (action.type) {
     case ADD_TODO:
